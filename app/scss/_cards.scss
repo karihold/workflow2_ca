@@ -1,0 +1,109 @@
+/*Cards*/
+
+.cards-container {
+  & > .card {
+    width: calc(50% - 50px);
+  }
+  @media only screen and (max-width: 760px) {
+    flex-flow: column;
+    align-items: center;
+    padding: 40px 25px;
+  }
+}
+
+.cards-container-tour-page {
+  margin: 40px 25px;
+  & > .card {
+    width: calc((100% / 3) - 50px);
+  }
+  @media only screen and (max-width: 1280px) {
+    .card {
+      width: calc(50% - 50px);
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    flex-flow: column;
+    align-items: center;
+    padding: 40px 25px;
+  }
+}
+
+.cards-container,
+.cards-container-tour-page {
+  margin: 40px 0;
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  @media only screen and (max-width: 760px) {
+    & > .card {
+      width: 100%;
+    }
+  }
+}
+
+.card {
+  border: 2px solid #60778a;
+  padding: 20px 25px 20px;
+  box-shadow: 4px 4px 6px #223542;
+  margin: 25px 25px;
+  max-width: 600px;
+  margin-bottom: 20px;
+
+  & > p {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  & > .booking-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 180px;
+    font-size: 20px;
+    background-color: #f5b342;
+    color: #223542;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    margin: 16px auto;
+    @media only screen and (max-width: 760px) {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    margin: 25px 0;
+  }
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px;
+
+  & > img {
+    width: 100%;
+    max-height: 400px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #223542;
+    object-fit: cover;
+  }
+
+  & > h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+  & > h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
+.booking-button:hover {
+  border: 2px solid #f5b342;
+  color: #f5b342;
+  background-color: #f8f9fd;
+  transition: 0.2s;
+  text-decoration: none;
+}

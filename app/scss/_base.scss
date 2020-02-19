@@ -1,0 +1,35 @@
+/*Base*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #1c1c1c;
+  background-color: #f8f9fd;
+  font-family: 'Hero';
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fd;
+  font-family: 'Lato';
+  transition: 0.2s;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f5b342;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Hero';
+  text-align: center;
+}

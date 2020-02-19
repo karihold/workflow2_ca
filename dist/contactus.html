@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Re-Cycle - Contact Us</title>
+  <link href="./css/main.css" rel="stylesheet"></head>
+
+  <body>
+    <header>
+      <div class="nav-wrapper">
+        <a href="./index.html" id="logo-link-wrapper">
+          <img src="./assets/icons/re-cycle-logo.svg" alt="My Logo" id="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li class="nav-item">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./tours.html">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a href="./aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contactus.html"> Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <section class="header-titles">
+        <h1><span class="letter-highlight">R</span>e-<span class="letter-highlight">C</span>ycle</h1>
+        <h2>Eco Friendly Sightseeing</h2>
+      </section>
+    </header>
+    <main>
+      <h1>Send Us A Message</h1>
+      <form>
+        <fieldset>
+          <legend>Contact Info</legend>
+          <div class="input-wrapper">
+            <label for="name-input">Your Name:</label>
+            <input id="name-input" type="text" name="fullName" size="30" placeholder="Enter your name" />
+          </div>
+          <div class="input-wrapper">
+            <label for="adress-input">Adress:</label>
+            <input id="adress-input" type="text" name="adress" size="30" placeholder="Enter your adress" />
+          </div>
+          <div class="input-wrapper">
+            <label for="phone-input">Phone:</label>
+            <input
+              id="phone-input"
+              type="tel"
+              name="phone"
+              size="30"
+              maxlength="10"
+              placeholder="Enter your phonenumber"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="email-input">E-mail:</label>
+            <input id="email-input" type="email" name="email" size="30" placeholder="Enter your e-mail adress" />
+          </div>
+          <div class="input-wrapper">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+          <div class="input-wrapper">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+          </div>
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <section class="footer-link-group">
+        <h2>About Us</h2>
+        <ul class="footer-links">
+          <li>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Tours</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-link-group">
+        <h2>Customer Service</h2>
+        <ul class="footer-links">
+          <li>
+            <a href="#"> Contact Us</a>
+          </li>
+          <li>
+            <a href="#">Book now</a>
+          </li>
+          <li>
+            <a href="#">FAQs</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-link-group">
+        <h2>Legal</h2>
+        <ul class="footer-links">
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+          <li>
+            <a href="#">Terms and Conditions</a>
+          </li>
+          <li>
+            <a href="#">Cookies</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="footer-link-group">
+        <div class="social-media-wrapper">
+          <a href="#" id="facebook"></a>
+          <a href="#" id="twitter"></a>
+          <a href="#" id="email"></a>
+          <a href="#" id="instagram"></a>
+        </div>
+      </section>
+    </footer>
+  <script type="text/javascript" src="./js/main.js"></script></body>
+</html>

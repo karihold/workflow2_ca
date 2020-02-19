@@ -1,0 +1,117 @@
+/*Footer*/
+
+footer {
+  padding: 40px 30px 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  color: #f8f9fd;
+  background-color: #223542;
+  @media only screen and (max-width: 760px) {
+    flex-flow: row wrap;
+
+    & > section {
+      width: 50%;
+    }
+  }
+  @media only screen and (max-width: 460px) {
+    flex-flow: column;
+
+    & > section {
+      width: 100%;
+    }
+  }
+}
+
+.footer-link-group {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #f8f9fd;
+  background-color: #223542;
+  font-family: 'hero';
+  & > h2 {
+    text-align: left;
+    margin-bottom: 14px;
+  }
+
+  @media only screen and (max-width: 760px) {
+    flex-flow: row wrap;
+
+    margin-bottom: 20px;
+
+    & > h2 {
+      text-align: center;
+    }
+  }
+}
+
+.footer-links {
+  margin-top: 10px;
+  text-align: left;
+  list-style: none;
+  color: #f8f9fd;
+  background-color: #223542;
+  font-family: 'hero';
+
+  & > li {
+    padding-bottom: 6px;
+  }
+
+  @media only screen and (max-width: 760px) {
+    text-align: center;
+  }
+
+  @media only screen and (max-width: 460px) {
+    text-align: center;
+  }
+}
+
+.social-media-wrapper {
+  width: 120px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  & > a {
+    width: calc(50% - 20px);
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+}
+
+#facebook {
+  background-image: url('../assets/icons/facebook-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#instagram {
+  background-image: url('../assets/icons/instagram-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#email {
+  background-image: url('../assets/icons/email-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#twitter {
+  background-image: url('../assets/icons/twitter-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+@media only screen and (max-width: 460px) {
+  .social-media {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+}
